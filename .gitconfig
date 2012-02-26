@@ -1,0 +1,45 @@
+[alias]
+	co = checkout
+	br = branch
+	unstage = reset HEAD --
+	sg = log --pretty=format:'%h %an %s' --graph
+	st = status
+	ci = commit
+	w = whatchanged
+        up = pull
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
+
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
+
+[merge]
+ tool = opendiff
+
+[diff] 
+ external = "/Users/FreeRadical/bin/git-diff-driver.sh"
+
+[github]
+	user = mikhailxu
+	token = 655dde57b7defd44622868408591c622
+[user]
+	email = mikhail.xu@gmail.com
+	name = Mikhail Xu
